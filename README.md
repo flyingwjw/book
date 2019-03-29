@@ -48,8 +48,16 @@ build [book] [output]           build a book
 ### Deploy
 
 ```
-$ gitbook build test share/test
+$ ./deploy.sh
 ```
-编译本地test目录输出到share/test目录
 
-这里可以把share目录放到github仓库 https://github.com/flyingwjw/flyingwjw.github.io.git 中, 这样就可以直接访问https://flyingwjw.github.io/share/test 来访问test book的内容。直接访问 https://flyingwjw.github.io 还是Hexo生成的网页，与gitbook生成的网页没有冲突，扩展了github免费web服务器的使用，哈哈。
+或者
+
+```
+$ gitbook init test
+$ gitbook build test share/test
+$ cp -rf share ../flyingwjw.github.io
+```
+注意：flyingwjw.github.io目录位置要根据实际情况修改，该目录是仓库 https://github.com/flyingwjw/flyingwjw.github.io.git的本地目录。
+
+编译本地test目录输出到share/test目录，把share目录放到github仓库 https://github.com/flyingwjw/flyingwjw.github.io.git 中, 这样就可以直接访问https://flyingwjw.github.io/share/test 来访问test book的内容。直接访问 https://flyingwjw.github.io 还是Hexo生成的网页，与gitbook生成的网页没有冲突，扩展了github免费web服务器的使用，哈哈。

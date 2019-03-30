@@ -3,7 +3,7 @@
 ## 环境搭建
 
 ```
-$ npm install gitbook -g
+$ npm install gitbook-cli -g
 ```
 
 ## 常用命令

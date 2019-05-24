@@ -45,6 +45,7 @@
 * 2 爬虫基础
     * [2.1 HTTP基本原理](Chapter2/2.1_HTTP.md)
     * [2.2 网页基础](Chapter2/2.2_Web_Base_.md)
+* 3 基本库的使用
+    * [3.1 urllib](Chapter3/3.1_UrlLib.md)
 * 结尾
-
 
